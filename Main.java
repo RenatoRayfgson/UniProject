@@ -1,5 +1,10 @@
+import static menus.Menu.*;
+
 public class Main {
-    public static void main(String args[]){
-        System.out.println("Hello World!");
+    public int option = -1;
+    public void main(String args[]){        
+        while(option != 0){
+            menu();            
+        }
     }
 }

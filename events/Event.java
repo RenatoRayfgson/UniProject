@@ -12,7 +12,7 @@ public abstract class Event {
     protected int maxCapacity;    
     protected String description;   
     protected ArrayList<Participant> participants;
-    protected int type;
+    protected int type; // 1 - AcademicExhibition, 2 - Course, 3 - Lecture, 4 - Workshop
 
     public Event(String title, Date date, String local, int maxCapacity, String description, int type){
         this.title = title;

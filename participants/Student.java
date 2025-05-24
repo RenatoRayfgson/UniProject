@@ -3,6 +3,11 @@ package participants;
 public class Student extends Participant  {
     private String matriculation;
 
+    public Student(String name, String email, String cpf, int type, String matriculation){
+    super(name, email, cpf, type);
+    this.matriculation = matriculation;
+    }
+
     public String getMatriculation() {
         return matriculation;
     }

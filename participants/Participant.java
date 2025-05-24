@@ -1,9 +1,21 @@
 package participants;
 
 public abstract class Participant {
-    private String name;
-    private String email;
-    private String cpf;
+    protected String name;
+    protected String email;
+    protected String cpf;
+    protected int type; //1 - Guest, 2 - Professor, 3 - Student
+
+    public Participant(String name, String email, String cpf, int type){
+        this.name = name;
+        this.email = email;
+        this.cpf = cpf;
+        this.type = type;
+    }
+
+    public void register(){
+
+    }
 
     public String getName() {
         return name;

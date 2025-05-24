@@ -1,8 +1,16 @@
 package events;
 
+import java.util.Date;
+
 public class Course extends Event {
     private int hours;
     private String professor;
+
+    public Course(String title, Date date, String local, int maxCapacity, String description, int type, String professor, int hours){
+        super(title, date, local, maxCapacity, description, type);
+        this.hours = hours;
+        this.professor = professor;
+    }    
 
     public int getHours() {
         return hours;
